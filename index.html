@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="static/script.js"></script>
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="static/icon-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Nathan Mintz</title>
+</head>
+<body>
+    <div id="all">
+        <div class="container">
+            <div class="row first-row">
+                <div class="col-4">
+                    <img src="static/personal-photos/headshot1.jpeg" alt="Headshot" id="headshot" class="rounded">
+                </div>
+                <div class="col-8">
+                    <div id="about-me" class="rounded info-box">
+                        <h1 id="am-hdr" class="box-hdr">About Me</h1>
+                        <ul id="am-info-list">
+                            <li>Full Name: Nathan Samuel Mintz</li>
+                            <li>Date of Birth: 4/1/2004 (<span id="age-span"></span>)</li>
+                            <li>Hometown: Woodcliff Lake, NJ</li>
+                            <li>Current Residence: Boston, MA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row first-row">
+                <div class="col">
+                    <div id="education" class="rounded info-box">
+                        <h1 class="box-hdr" id="edu-hdr">Education</h1>
+                        <ul>
+                            <li id="hs-li">
+                                <u>High School</u>
+                                <ul>
+                                    <li>Graduated from Pascack Hills High School</li>
+                                    <li>Date of Graduation: 6/18/22</li>
+                                    <li>GPA (Unweighted): 3.74</li>
+                                    <li>GPA (Weighted): 4.6</li>
+                                    <li>Top Quartile of Class by GPA</li>
+                                </ul>
+                            </li>
+                            <li id="college-li">
+                                <u>University</u>
+                                <ul>
+                                    <li>First-Year at Northeastern University</li>
+                                    <li><span style="font-size:18px">Computer Science + Business Administration Major</span></li>
+                                    <li>Khoury College of Computer Sciences</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="skills" class="rounded info-box">
+                        <h1 class="box-hdr" id="skill-hdr">Skills</h1>
+                        <ul>
+                            <li id="cs-li">Proficient in
+                                <ul>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>JavaScript (including JQuery)</li>
+                                    <li>HTML & CSS (including Bootstrap)</li>
+                                </ul>
+                            </li>
+                            <li id="lisp-li">LISP-style functional programming</li>
+                            <li id="cad-li">Autodesk Inventor</li>
+                            <li id="china-li">Chinese Language (7 years of experience)</li>
+                            <li id="act-li">34 ACT Score
+                                <ul>
+                                    <li>36 Reading</li>
+                                    <li>34 Math</li>
+                                    <li>34 Writing</li>
+                                    <li>32 Science</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row first-row">
+                <div class="rounded info-box">
+                    <h3>Completed Credits (26 Credits)</h3>
+                    <table class="table">
+                        <thead>
+                            <th scope="col">Course</th>
+                            <th scope="col">Credits</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS 1990: Computer Science Elective</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>ECON 1116: Principles of Microeconomics</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>MATH 1341: Calculus 1 for Science and Engineering</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>ENGW 1111: First Year Writing</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>PHYS 1145/1146: Physics for Life Sciences 1/Lab</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>CHEM 1161/1162: General Chemistry for Science Majors/Lab</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Ongoing Courses (19 Credits)</h3>
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Course</th>
+                                        <th scope="col">Credits</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>CS 2500: Fundamentals of Computer Science I</td>
+                                        <td>4</td>
+                                      </tr>
+                                      <tr>
+                                        <td>CS 1800: Discrete Structures</td>
+                                        <td>4</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ECON 1115: Principles of Macroeconomics</td>
+                                        <td>4</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ACCT 1201: Financial Accounting and Reporting</td>
+                                        <td>4</td>
+                                      </tr>
+                                      <tr>
+                                        <td>CS 2501: Lab for CS 2500</td>
+                                        <td>1</td>
+                                      </tr>
+                                      <tr>
+                                        <td>CS 1802: Recitation for CS 1800</td>
+                                        <td>1</td>
+                                      </tr>
+                                      <tr>
+                                        <td>CS 1200: First Year Seminar</td>
+                                        <td>1</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                </div>
+            </div>
+            <div class="row first-row">
+                <div class="col">
+                    <div style="float:top">
+                        <div class="rounded info-box">
+                            <h1 class="box-hdr" id="work-hdr">Work Experience</h1>
+                            <ul>
+                                <li id="bbc-li"><b>Beach Badge Checker</b>
+                                    <ul>
+                                        <li>Mantoloking, New Jersey</li>
+                                        <li>July 2021 - August 2021</li>
+                                        <li>21 hr/wk</li>
+                                        <li>Checked if people coming onto the beach had badges, directed them to the closest sales shed if they did not</li>
+                                    </ul>
+                                </li>
+                                <li id="farm-li"><b>Farm Assistant</b>
+                                    <ul>
+                                        <li>Demarest Farms, WCL, New Jersey</li>
+                                        <li>July 2020 - August 2020</li>
+                                        <li>5 hr/wk</li>
+                                        <li>Mopped, swept, changed garbage bags, and helped out around the farm</li>
+                                    </ul>
+                                </li>
+                                <li id="traf-li"><b>Traffic Control</b>
+                                    <ul>
+                                        <li>Demarest Farms, WCL, New Jersey</li>
+                                        <li>September 2019 - November 2019</li>
+                                        <li>14 hr/wk</li>
+                                        <li>Helped control traffic, park cars, guide people, and answer questions</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="float:bottom; margin-top: 60px;">
+                        <div class="rounded info-box">
+                            <h1 class="box-hdr" id="hobbies">Hobbies</h1>
+                            <ul>
+                                <li id="sb-li"><b>Snowboarding</b>
+                                    <ul>
+                                        <li>Started at age 8</li>
+                                        <li>Favorite spots:
+                                            <ul>
+                                                <li>Park City, UT</li>
+                                                <li>Breckenridge, CO</li>
+                                                <li>Steamboat, CO</li>
+                                                <li>Mt. Snow, VT</li>
+                                                <li>Killington, VT</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="bjj-li"><b>Brazilian Jiu-Jitsu</b></li>
+                                <li id="bball-li"><b>Basketball</b></li>
+                                <li id="golf-li"><b>Golf</b></li>
+                                <li id="mma-li"><b>Watching MMA/Boxing</b></li>
+                                <li id="traveling-li"><b>Traveling</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="rounded info-box">
+                        <h1 class="box-hdr" id="vol-hdr">Volunteer Service</h1>
+                        <ul>
+                            <li id="hfh-li"><b>Warehouse Assistant @ Habitat for Humanity</b>
+                                <ul>
+                                    <li>Toms River, New Jersey</li>
+                                    <li>July 2021 - August 2021</li>
+                                    <li>8 hr/wk</li>
+                                    <li><p>Worked in HfH warehouse. Moved furniture from backroom to storefront, loaded and unloaded incoming furniture from trucks, organized showfloor, and aided customers in finding and loading purchased furniture</p></li>
+                                </ul>
+                            </li>
+                            <li id="java-li"><b>Java Tutor</b>
+                                <ul>
+                                    <li>Woodcliff Middle School, WCL, New Jersey</li>
+                                    <li>October 2020 - November 2020</li>
+                                    <li>1 hr/wk</li>
+                                    <li>Tutored middle schoolers in how to code Java. Taught from basics like variables and printing to the console, to intermediate skills like loops and mathematics</li>
+                                </ul>
+                            </li>
+                            <li id="hs-li"><b>Hebrew School Volunteer</b>
+                                <ul>
+                                    <li>Temple Emanuel, WCL, New Jersey</li>
+                                    <li>September 2020 - September 2021</li>
+                                    <li>2 hr/wk</li>
+                                    <li>Aided local Hebrew school with IT help during online courses, like Zoom troubleshooting and screen sharing</li>
+                                </ul>
+                            </li>
+                            <li id="ballot-li"><b>Campaign Volunteer</b>
+                                <ul>
+                                    <li>Josh Gottheimer for Congress Campaign</li>
+                                    <li>June 2020 - November 2020</li>
+                                    <li>4 hr/wk</li>
+                                    <li>Volunteered for Josh Gottheimer for Congress campaign doing calls and texts to constituents, encouraging them to vote and answering questions about Josh Gottheimer's platform</li>
+                                </ul>
+                            </li>
+                            <li id="senior-li"><b>SeniorTech</b>
+                                <ul>
+                                    <li>YJCC Manhattan</li>
+                                    <li>February 2016 - December 2019</li>
+                                    <li>2 hr/month</li>
+                                    <li>Helped seniors with technology problems or questions, like setting up Facebook accounts to connect with relatives</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row first-row" style="margin-bottom: 50px;">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="rounded info-box">
+                        <h1 class="box-hdr" id="contact">Contact Me</h1>
+                            <ul>
+                                <li>
+                                    <img src="static/icons/phone-icon.png" alt="" style="display:inline;height:20px;width:20px">
+                                    <p style="display: inline;">&ensp;<a href="tel:5517959422">+1 (551) 795-9422</a></p>
+                                </li>
+                                <li>
+                                    <img src="static/icons/email-icon.png" alt="" style="display:inline;height:20px;width:20px">
+                                    <p style="display: inline;">&ensp;<a href="mailto:natemintz7@gmail.com">natemintz7@gmail.com</a></p>
+                                </li>
+                                <li>
+                                    <img src="static/icons/linkedin-icon.png" alt="" style="display:inline;height:20px;width:20px">
+                                    <p style="display: inline;">&ensp;<a href="https://www.linkedin.com/in/nate-mintz-532a04250">Nate Mintz</a></p>
+                                </li>
+                                <li>
+                                    <img src="static/icons/instagram-icon.webp" alt="" style="display:inline;height:20px;width:20px">
+                                    <p style="display: inline;">&ensp;<a href="https://www.instagram.com/natemintz/">@natemintz</a></p>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
