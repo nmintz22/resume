@@ -103,3 +103,36 @@
     margin-left: -20px; 
     margin-right: 10px;
 }
+#tw-li:before {
+    content: '\1F426'; 
+    margin-left: -20px; 
+    margin-right: 10px;
+}
+#ms-li:before {
+    content: '\1F4A3'; 
+    margin-left: -20px; 
+    margin-right: 10px;
+}
+#ws-li:before {
+    content: '\1F5A5'; 
+    margin-left: -20px; 
+    margin-right: 10px;
+}
+#movie-li:before {
+    content: '\1F3A5'; 
+    margin-left: -20px; 
+    margin-right: 10px;
+}
+#film-li:before {
+    content: '\1F37F'; 
+    margin-left: -20px; 
+    margin-right: 10px;
+}
+#git:before {
+    content: url(icons/github-icon.png);
+    margin-right: 10px;
+}
+#rw-li:before {
+    content: url(icons/twitter-icon.png);
+    margin-right: 10px;
+}
