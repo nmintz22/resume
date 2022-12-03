@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="icon-styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="static/script.js"></script>
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="static/icon-styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="mask-icon"
+        href="{{ url_for('static', filename='favicon.ico') }}/images/safari-pinned-tab.svg?v=M44lzPylqQ"
+        color="#000000">
     <title>Nathan Mintz</title>
 </head>
+
 <body>
-    <div id="all">
+    <div class="first">
         <div class="container">
             <div class="row first-row">
                 <div class="col-4">
-                    <img src="headshot1.jpeg" alt="Headshot" id="headshot" class="rounded">
+                    <img src="static/personal-photos/headshot1.jpeg" alt="Headshot" id="headshot">
                 </div>
                 <div class="col-8">
                     <div id="about-me" class="rounded info-box">
                         <h1 id="am-hdr" class="box-hdr">About Me</h1>
                         <ul id="am-info-list">
-                            <li>Full Name: Nathan Samuel Mintz</li>
-                            <li>Date of Birth: 4/1/2004 (<span id="age-span"></span>)</li>
+                            <li>Nathan Samuel Mintz</li>
+                            <li>DoB: 4/1/2004 (<span id="age-span"></span>)</li>
                             <li>Hometown: Woodcliff Lake, NJ</li>
                             <li>Current Residence: Boston, MA</li>
                         </ul>
@@ -36,7 +43,7 @@
                         <h1 class="box-hdr" id="edu-hdr">Education</h1>
                         <ul>
                             <li id="hs-li">
-                                <u>High School</u>
+                                <b>High School</b>
                                 <ul>
                                     <li>Graduated from Pascack Hills High School</li>
                                     <li>Date of Graduation: 6/18/22</li>
@@ -46,32 +53,27 @@
                                 </ul>
                             </li>
                             <li id="college-li">
-                                <u>University</u>
+                                <b>University</b>
                                 <ul>
                                     <li>First-Year at Northeastern University</li>
-                                    <li><span style="font-size:18px">Computer Science + Business Administration Major</span></li>
+                                    <li><span style="font-size:18px">Computer Science + Business Administration
+                                            Major</span></li>
                                     <li>Khoury College of Computer Sciences</li>
                                 </ul>
                             </li>
                         </ul>
+                        <div id="nu-div">
+                            <img src="/static/icons/nu-icon.svg" alt="" id="nu-img">
+                        </div>
                     </div>
                 </div>
                 <div class="col">
                     <div id="skills" class="rounded info-box">
-                        <h1 class="box-hdr" id="skill-hdr">Skills</h1>
+                        <h1 class="box-hdr" id="skill-hdr">Skills/Achievements</h1>
                         <ul>
-                            <li id="cs-li">Proficient in
-                                <ul>
-                                    <li>Java</li>
-                                    <li>Python</li>
-                                    <li>JavaScript (including JQuery)</li>
-                                    <li>HTML & CSS (including Bootstrap)</li>
-                                </ul>
-                            </li>
-                            <li id="lisp-li">LISP-style functional programming</li>
-                            <li id="cad-li">Autodesk Inventor</li>
-                            <li id="china-li">Chinese Language (7 years of experience)</li>
-                            <li id="act-li">34 ACT Score
+                            <li id="cad-li"><b>Autodesk Inventor</b></li>
+                            <li id="china-li"><b>Chinese Language (7 years of experience)</b></li>
+                            <li id="act-li"><b>34 ACT Score</b>
                                 <ul>
                                     <li>36 Reading</li>
                                     <li>34 Math</li>
@@ -80,12 +82,130 @@
                                 </ul>
                             </li>
                         </ul>
+                        <div style="margin-top:100px;">
+                            <div style="display:flex;justify-content:space-evenly;margin-bottom:50px;">
+                                <img src="/static/icons/java-icon.png" alt="" class="coding-icon">
+                                <img src="/static/icons/python-icon.png" alt="" class="coding-icon">
+                            </div>
+                            <div style="display:flex;align-items:center;justify-content:space-evenly;">
+                                <img src="/static/icons/css-icon.png" alt="" class="coding-icon">
+                                <img src="/static/icons/html-icon.png" alt="" class="coding-icon">
+                                <img src="/static/icons/js-icon.png" alt="" class="coding-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="hb-br"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="rounded info-box coding-div">
+                        <h1 class="box-hdr" id="coding" style="display:inline"></h1>
+                        <h3 style="display:inline; float:right" id="git"><a
+                                href="https://github.com/nmintz22">nmintz22</a></h3>
+                        <ul>
+                            <li>
+                                <h2 id="tw-li">Twitter Bot</h2>
+                                <ul>
+                                    <li>
+                                        <h4>Stack:</h4>
+                                        <ul>
+                                            <li>
+                                                <h5>Python</h5>
+                                            </li>
+                                            <li>
+                                                <h5>AWS Lambda</h5>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Twitter bot that tweets the weather in a random location around the
+                                            world every fifteen minutes</p>
+                                    </li>
+                                    <li><a href="https://www.twitter.com/randomweather42"
+                                            id="rw-li">@randomweather42</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2 id="ms-li">Minesweeper Bot</h2>
+                                <ul>
+                                    <li>
+                                        <h4>Stack:</h4>
+                                        <ul>
+                                            <li>
+                                                <h5>Python</h5>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Selenium bot that plays a game of Minesweeper, either to completion or to the
+                                            point where the only way to progress is a blind guess</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2 id="film-li">Film Journal Site</h2>
+                                <ul>
+                                    <li>
+                                        <h4>Stack:</h4>
+                                        <ul>
+                                        <li>
+                                            <h5>Python (Flask)</h5>
+                                        </li>
+                                        <li>
+                                            <h5>HTML 5</h5>
+                                        </li>
+                                        <li>
+                                            <h5>CSS 3 & Bootstrap</h5>
+                                        </li>
+                                        <li>
+                                            <h5>JavaScript & JQuery</h5>
+                                        </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p><a href="https://nmintz22.pythonanywhere.com" target="blank">A journal of reviews of films I've seen</a></p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2 id="ws-li">This Website!</h2>
+                                <ul>
+                                    <li>
+                                        <h4>Stack:</h4>
+                                        <ul>
+                                            <li>
+                                                <h5>HTML 5</h5>
+                                            </li>
+                                            <li>
+                                                <h5>CSS 3 & Bootstrap</h5>
+                                            </li>
+                                            <li>
+                                                <h5>JavaScript & JQuery</h5>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>This website was hand-built and designed from scratch!</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="row first-row">
-                <div class="rounded info-box">
-                    <h3>Completed Credits (26 Credits)</h3>
+                <div class="rounded info-box" id="uni-div">
+                    <h1 class="box-hdr" id="uni-hdr"></h1>
+                    <h3 class="tbl-hdr">Completed Credits (26 Credits)</h3>
                     <table class="table">
                         <thead>
                             <th scope="col">Course</th>
@@ -118,59 +238,69 @@
                             </tr>
                         </tbody>
                     </table>
-                    <h3>Ongoing Courses (19 Credits)</h3>
-                                <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">Course</th>
-                                        <th scope="col">Credits</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>CS 2500: Fundamentals of Computer Science I</td>
-                                        <td>4</td>
-                                      </tr>
-                                      <tr>
-                                        <td>CS 1800: Discrete Structures</td>
-                                        <td>4</td>
-                                      </tr>
-                                      <tr>
-                                        <td>ECON 1115: Principles of Macroeconomics</td>
-                                        <td>4</td>
-                                      </tr>
-                                      <tr>
-                                        <td>ACCT 1201: Financial Accounting and Reporting</td>
-                                        <td>4</td>
-                                      </tr>
-                                      <tr>
-                                        <td>CS 2501: Lab for CS 2500</td>
-                                        <td>1</td>
-                                      </tr>
-                                      <tr>
-                                        <td>CS 1802: Recitation for CS 1800</td>
-                                        <td>1</td>
-                                      </tr>
-                                      <tr>
-                                        <td>CS 1200: First Year Seminar</td>
-                                        <td>1</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                    <h3 class="tbl-hdr">Ongoing Courses (19 Credits)</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Course</th>
+                                <th scope="col">Credits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS 2500: Fundamentals of Computer Science I</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CS 1800: Discrete Structures</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>ECON 1115: Principles of Macroeconomics</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>ACCT 1201: Financial Accounting and Reporting</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CS 2501: Lab for CS 2500</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>CS 1802: Recitation for CS 1800</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>CS 1200: First Year Seminar</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="hb-br"></div>
                 </div>
             </div>
             <div class="row first-row">
                 <div class="col">
                     <div style="float:top">
-                        <div class="rounded info-box">
-                            <h1 class="box-hdr" id="work-hdr">Work Experience</h1>
+                        <div class="rounded info-box work-div">
+                            <h1 class="box-hdr" id="work-hdr"></h1>
                             <ul>
                                 <li id="bbc-li"><b>Beach Badge Checker</b>
                                     <ul>
                                         <li>Mantoloking, New Jersey</li>
                                         <li>July 2021 - August 2021</li>
                                         <li>21 hr/wk</li>
-                                        <li>Checked if people coming onto the beach had badges, directed them to the closest sales shed if they did not</li>
+                                        <li>Checked if people coming onto the beach had badges, directed them to the
+                                            closest sales shed if they did not</li>
                                     </ul>
                                 </li>
                                 <li id="farm-li"><b>Farm Assistant</b>
@@ -192,13 +322,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div style="float:bottom; margin-top: 60px;">
-                        <div class="rounded info-box">
-                            <h1 class="box-hdr" id="hobbies">Hobbies</h1>
+                    <div class="hb-br"></div>
+                    <div style="float:bottom;">
+                        <div class="rounded info-box" id="hob-div">
+                            <h1 class="box-hdr" id="hobbies"></h1>
                             <ul>
                                 <li id="sb-li"><b>Snowboarding</b>
                                     <ul>
-                                        <li>Started at age 8</li>
                                         <li>Favorite spots:
                                             <ul>
                                                 <li>Park City, UT</li>
@@ -210,7 +340,16 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li id="bjj-li"><b>Brazilian Jiu-Jitsu</b></li>
+                                <li id="bjj-li"><b>Brazilian Jiu-Jitsu</b>
+                                    <ul>
+                                        <li>White Belt @ Broadway Jiu-Jitsu</li>
+                                    </ul>
+                                </li>
+                                <li id="movie-li"><b>Movies</b>
+                                    <ul>
+                                        <li><a href="https://nmintz22.pythonanywhere.com" target="blank">Film Journal</a></li>
+                                    </ul>
+                                </li>
                                 <li id="bball-li"><b>Basketball</b></li>
                                 <li id="golf-li"><b>Golf</b></li>
                                 <li id="mma-li"><b>Watching MMA/Boxing</b></li>
@@ -220,15 +359,19 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="rounded info-box">
-                        <h1 class="box-hdr" id="vol-hdr">Volunteer Service</h1>
+                    <div class="rounded info-box" id="vo-div">
+                        <h1 class="box-hdr" id="vol-hdr"></h1>
                         <ul>
                             <li id="hfh-li"><b>Warehouse Assistant @ Habitat for Humanity</b>
                                 <ul>
                                     <li>Toms River, New Jersey</li>
                                     <li>July 2021 - August 2021</li>
                                     <li>8 hr/wk</li>
-                                    <li><p>Worked in HfH warehouse. Moved furniture from backroom to storefront, loaded and unloaded incoming furniture from trucks, organized showfloor, and aided customers in finding and loading purchased furniture</p></li>
+                                    <li>
+                                        <p>Worked in HfH warehouse. Moved furniture from backroom to storefront, loaded
+                                            and unloaded incoming furniture from trucks, organized showfloor, and aided
+                                            customers in finding and loading purchased furniture</p>
+                                    </li>
                                 </ul>
                             </li>
                             <li id="java-li"><b>Java Tutor</b>
@@ -236,7 +379,9 @@
                                     <li>Woodcliff Middle School, WCL, New Jersey</li>
                                     <li>October 2020 - November 2020</li>
                                     <li>1 hr/wk</li>
-                                    <li>Tutored middle schoolers in how to code Java. Taught from basics like variables and printing to the console, to intermediate skills like loops and mathematics</li>
+                                    <li>Tutored middle schoolers in how to code Java. Taught from basics like variables
+                                        and printing to the console, to intermediate skills like loops and mathematics
+                                    </li>
                                 </ul>
                             </li>
                             <li id="hs-li"><b>Hebrew School Volunteer</b>
@@ -244,7 +389,8 @@
                                     <li>Temple Emanuel, WCL, New Jersey</li>
                                     <li>September 2020 - September 2021</li>
                                     <li>2 hr/wk</li>
-                                    <li>Aided local Hebrew school with IT help during online courses, like Zoom troubleshooting and screen sharing</li>
+                                    <li>Aided local Hebrew school with IT help during online courses, like Zoom
+                                        troubleshooting and screen sharing</li>
                                 </ul>
                             </li>
                             <li id="ballot-li"><b>Campaign Volunteer</b>
@@ -252,7 +398,9 @@
                                     <li>Josh Gottheimer for Congress Campaign</li>
                                     <li>June 2020 - November 2020</li>
                                     <li>4 hr/wk</li>
-                                    <li>Volunteered for Josh Gottheimer for Congress campaign doing calls and texts to constituents, encouraging them to vote and answering questions about Josh Gottheimer's platform</li>
+                                    <li>Volunteered for Josh Gottheimer for Congress campaign doing calls and texts to
+                                        constituents, encouraging them to vote and answering questions about Josh
+                                        Gottheimer's platform</li>
                                 </ul>
                             </li>
                             <li id="senior-li"><b>SeniorTech</b>
@@ -260,7 +408,8 @@
                                     <li>YJCC Manhattan</li>
                                     <li>February 2016 - December 2019</li>
                                     <li>2 hr/month</li>
-                                    <li>Helped seniors with technology problems or questions, like setting up Facebook accounts to connect with relatives</li>
+                                    <li>Helped seniors with technology problems or questions, like setting up Facebook
+                                        accounts to connect with relatives</li>
                                 </ul>
                             </li>
                         </ul>
@@ -272,24 +421,37 @@
                 <div class="col-6">
                     <div class="rounded info-box">
                         <h1 class="box-hdr" id="contact">Contact Me</h1>
-                            <ul>
-                                <li>
-                                    <img src="icons/phone-icon.png" alt="" style="display:inline;height:20px;width:20px">
-                                    <p style="display: inline;">&ensp;<a href="tel:5517959422">+1 (551) 795-9422</a></p>
-                                </li>
-                                <li>
-                                    <img src="icons/email-icon.png" alt="" style="display:inline;height:20px;width:20px">
-                                    <p style="display: inline;">&ensp;<a href="mailto:natemintz7@gmail.com">natemintz7@gmail.com</a></p>
-                                </li>
-                                <li>
-                                    <img src="icons/linkedin-icon.png" alt="" style="display:inline;height:20px;width:20px">
-                                    <p style="display: inline;">&ensp;<a href="https://www.linkedin.com/in/nate-mintz-532a04250">Nate Mintz</a></p>
-                                </li>
-                                <li>
-                                    <img src="icons/instagram-icon.webp" alt="" style="display:inline;height:20px;width:20px">
-                                    <p style="display: inline;">&ensp;<a href="https://www.instagram.com/natemintz/">@natemintz</a></p>
-                                </li>
-                            </ul>
+                        <ul>
+                            <li>
+                                <img src="static/icons/phone-icon.png" alt=""
+                                    style="display:inline;height:20px;width:20px">
+                                <p style="display: inline;">&ensp;<a href="tel:5517959422">+1 (551) 795-9422</a></p>
+                            </li>
+                            <li>
+                                <img src="static/icons/email-icon.png" alt=""
+                                    style="display:inline;height:20px;width:20px">
+                                <p style="display: inline;">&ensp;<a
+                                        href="mailto:natemintz7@gmail.com">natemintz7@gmail.com</a></p>
+                            </li>
+                            <li>
+                                <img src="static/icons/github-icon.png" alt=""
+                                    style="display:inline;height:20px;width:20px">
+                                <p style="display: inline;">&ensp;<a href="https://www.github.com/nmintz22">nmintz22</a>
+                                </p>
+                            </li>
+                            <li>
+                                <img src="static/icons/linkedin-icon.png" alt=""
+                                    style="display:inline;height:20px;width:20px">
+                                <p style="display: inline;">&ensp;<a
+                                        href="https://www.linkedin.com/in/nate-mintz-532a04250">Nate Mintz</a></p>
+                            </li>
+                            <li>
+                                <img src="static/icons/instagram-icon.webp" alt=""
+                                    style="display:inline;height:20px;width:20px">
+                                <p style="display: inline;">&ensp;<a
+                                        href="https://www.instagram.com/natemintz/">@natemintz</a></p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-3"></div>
@@ -297,4 +459,5 @@
         </div>
     </div>
 </body>
+
 </html>
