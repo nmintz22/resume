@@ -144,3 +144,7 @@
     content: '\1F4BE';
     margin-right: 10px;
 }
+#sfdc-li:before {
+    content: '\1F4B2';
+    margin-right: 10px;
+}
