@@ -136,3 +136,11 @@
     content: url(icons/twitter-icon.png);
     margin-right: 10px;
 }
+#cs-li:before {
+    content: '\1F5A5';
+    margin-right: 10px;
+}
+#crl-li:before {
+    content: '\1F4BE';
+    margin-right: 10px;
+}
